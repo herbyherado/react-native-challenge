@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test <Fighters/> capturing Snapshot of Fighters 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "flex": 2,
+      }
+    }
+  >
+    <View>
+      <TextInput
+        allowFontScaling={true}
+        defaultValue=""
+        onChangeText={[Function]}
+        placeholder="Search..."
+        style={
+          Object {
+            "borderBottomWidth": 1,
+            "borderColor": "gray",
+            "height": 30,
+            "marginBottom": 30,
+            "marginTop": 20,
+            "paddingBottom": 5,
+            "width": 200,
+          }
+        }
+      />
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontSize": 25,
+        }
+      }
+    >
+       No result found for '
+      
+      ' 
+    </Text>
+  </View>
+</View>
+`;

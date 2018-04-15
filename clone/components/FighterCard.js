@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, TouchableHighlight, Image } from 'react-native'
+import { Text, View, TouchableHighlight, Image, StyleSheet } from 'react-native'
 
 
 class FighterCard extends Component {
@@ -9,7 +9,7 @@ class FighterCard extends Component {
     return (
       <TouchableHighlight onPress={ this.props.press }>
         <View>
-          <Image style={{width: 150, height: 150, alignSelf: 'center'}} source={{ uri: fighter.profile_image }} />
+          <Image style={styles.img} source={{ uri: fighter.profile_image }} />
           <Text> Name: { `${fighter.first_name} ${fighter.last_name}` } </Text>
           <Text> Wins: { fighter.wins } </Text>
           <Text> Losses: { fighter.losses } </Text>
@@ -18,4 +18,12 @@ class FighterCard extends Component {
     )
   }
 };
+
+const styles = StyleSheet.create({
+  img: {
+    width: 150,
+    height: 150,
+    alignSelf: 'center'
+  }
+})
 export default FighterCard

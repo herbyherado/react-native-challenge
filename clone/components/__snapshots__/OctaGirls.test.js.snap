@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View>
+  <Image
+    source={
+      Object {
+        "uri": "http://media.ufc.tv//fighter_images/Octagon_Girls/Arianny_MediumProfile.jpg",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 150,
+        "width": 150,
+      }
+    }
+  />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Arianny Celeste
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    USA
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    The best part of the job is the whole experience.
+  </Text>
+</View>
+`;

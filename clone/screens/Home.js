@@ -8,20 +8,12 @@ import CardTab from '../components/CardTab'
 import Logo from '../components/Logo'
 
 class Home extends Component {
-
-  toFighters = () => {
-    this.props.navigation.navigate('Fighters')
-  }
-  toOctagirls = () => {
-    this.props.navigation.navigate('Octagirls')
-  }
-
   render() {
     return (
       <View style={styles.wrapper}>
         <Logo />
-        <CardTab press={ this.toFighters } text={'Fighters'} />
-        <CardTab press={ this.toOctagirls } text={'Octagon Girls'} />
+        <CardTab press={ () => this.props.navigation.navigate('Fighters') } text={'Fighters'} />
+        <CardTab press={ () => this.props.navigation.navigate('Octagirls') } text={'Octagon Girls'} />
       </View>
     )
   }

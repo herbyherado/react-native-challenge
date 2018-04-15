@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontFamily": "Helvetica",
+        "fontSize": 20,
+        "paddingVertical": 10,
+      }
+    }
+  >
+     
+    Mighty Mouse
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 12,
+        "paddingVertical": 3,
+      }
+    }
+  >
+     
+    Flyweight
+  </Text>
+  <Image
+    source={
+      Object {
+        "uri": "http://imagec.ufc.com/http%253A%252F%252Fmedia.ufc.tv%252Ffighter_images%252FDemitrious_Johnson%252FJOHNSON_DEMETRIOUS_L_BELT_S.png?mh530",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": "100%",
+        "marginTop": 10,
+        "width": 180,
+      }
+    }
+  />
+</View>
+`;

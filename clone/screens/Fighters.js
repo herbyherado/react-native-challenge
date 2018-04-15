@@ -11,15 +11,11 @@ class Fighters extends React.Component {
   handleChange = (e) => {
     this.props.updateSearch(e)
   }
-  
-  goToDetail = (fighter) => {
-    this.props.navigation.navigate('FighterStats', { title: `${fighter.first_name} ${fighter.last_name}`, data: fighter })
-  }
 
   renderItem = ({item}) => (
     <FighterCard 
       fighter={item}
-      press={ () => this.goToDetail(item) } 
+      press={ () => this.props.navigation.navigate('FighterStats', { title: `${item.first_name} ${item.last_name}`, data: fighter }) } 
       key={`fighter-${item.id}`}
     />
   )
