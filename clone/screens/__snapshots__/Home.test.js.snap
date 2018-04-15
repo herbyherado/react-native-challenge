@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test <Home/> capturing Snapshot of Home 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#303030",
+      "flex": 1,
+      "paddingTop": 20,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "height": 150,
+        "marginBottom": 20,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../components/assets/UFC_Logo.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "flex": 1,
+          "resizeMode": "contain",
+          "width": "90%",
+        }
+      }
+    />
+  </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "borderBottomColor": "silver",
+          "borderTopColor": "silver",
+          "borderWidth": 1,
+          "marginTop": 20,
+          "padding": 30,
+          "width": "95%",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#fff",
+            "fontSize": 30,
+          }
+        }
+      >
+         
+        Fighters
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={null}
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "borderBottomColor": "silver",
+          "borderTopColor": "silver",
+          "borderWidth": 1,
+          "marginTop": 20,
+          "padding": 30,
+          "width": "95%",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#fff",
+            "fontSize": 30,
+          }
+        }
+      >
+         
+        Octagon Girls
+      </Text>
+    </View>
+  </View>
+</View>
+`;

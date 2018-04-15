@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  style={
+    Object {
+      "height": 150,
+      "marginBottom": 20,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../components/assets/UFC_Logo.png",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "flex": 1,
+        "resizeMode": "contain",
+        "width": "90%",
+      }
+    }
+  />
+</View>
+`;
