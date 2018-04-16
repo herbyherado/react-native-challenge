@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1523819635585" clover="3.2.0">
-  <project timestamp="1523819635586" name="All files">
-    <metrics statements="74" coveredstatements="54" conditionals="13" coveredconditionals="6" methods="42" coveredmethods="22" elements="129" coveredelements="82" complexity="0" loc="74" ncloc="74" packages="6" files="18" classes="18">
+<coverage generated="1523859812861" clover="3.2.0">
+  <project timestamp="1523859812861" name="All files">
+    <metrics statements="73" coveredstatements="52" conditionals="13" coveredconditionals="7" methods="40" coveredmethods="20" elements="126" coveredelements="79" complexity="0" loc="73" ncloc="73" packages="6" files="18" classes="18">
       <package name="components">
         <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <file name="CardTab.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/components/CardTab.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="6" count="11" type="stmt"/>
+          <line num="6" count="9" type="stmt"/>
           <line num="16" count="3" type="stmt"/>
         </file>
         <file name="FighterCard.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/components/FighterCard.js">
@@ -23,7 +23,7 @@
         </file>
         <file name="Logo.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/components/Logo.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="6" count="7" type="stmt"/>
+          <line num="6" count="6" type="stmt"/>
           <line num="14" count="2" type="stmt"/>
         </file>
         <file name="OctaGirl.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/components/OctaGirl.js">
@@ -33,7 +33,7 @@
         </file>
         <file name="SearchBar.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/components/SearchBar.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="6" count="5" type="stmt"/>
+          <line num="6" count="4" type="stmt"/>
           <line num="19" count="2" type="stmt"/>
         </file>
       </package>
@@ -41,111 +41,110 @@
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="UFC_Logo.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/components/assets/UFC_Logo.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="2" type="stmt"/>
+          <line num="1" count="1" type="stmt"/>
         </file>
       </package>
       <package name="screens">
-        <metrics statements="25" coveredstatements="16" conditionals="6" coveredconditionals="2" methods="20" coveredmethods="10"/>
+        <metrics statements="23" coveredstatements="3" conditionals="6" coveredconditionals="0" methods="18" coveredmethods="0"/>
         <file name="Fighters.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/screens/Fighters.js">
-          <metrics statements="11" coveredstatements="6" conditionals="4" coveredconditionals="1" methods="9" coveredmethods="3"/>
+          <metrics statements="11" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="0"/>
           <line num="12" count="0" type="stmt"/>
           <line num="16" count="0" type="stmt"/>
           <line num="18" count="0" type="stmt"/>
           <line num="23" count="0" type="stmt"/>
-          <line num="26" count="1" type="stmt"/>
-          <line num="27" count="1" type="cond" truecount="0" falsecount="2"/>
-          <line num="28" count="1" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="28" count="0" type="stmt"/>
           <line num="48" count="1" type="stmt"/>
-          <line num="66" count="1" type="stmt"/>
-          <line num="72" count="1" type="stmt"/>
+          <line num="66" count="0" type="stmt"/>
+          <line num="72" count="0" type="stmt"/>
           <line num="73" count="0" type="stmt"/>
         </file>
         <file name="Home.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/screens/Home.js">
-          <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="5"/>
-          <line num="12" count="1" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="21" count="1" type="stmt"/>
-          <line num="22" count="1" type="stmt"/>
-          <line num="26" count="1" type="stmt"/>
-          <line num="36" count="1" type="stmt"/>
-          <line num="37" count="1" type="stmt"/>
-          <line num="38" count="1" type="stmt"/>
+          <metrics statements="7" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="43" count="0" type="stmt"/>
+          <line num="44" count="0" type="stmt"/>
         </file>
         <file name="Octagirls.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/screens/Octagirls.js">
-          <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="2"/>
+          <metrics statements="5" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
           <line num="8" count="0" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
-          <line num="13" count="1" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
           <line num="29" count="1" type="stmt"/>
-          <line num="38" count="1" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
         </file>
       </package>
       <package name="store">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="rootReducer.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/rootReducer.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="5" count="3" type="stmt"/>
+          <line num="5" count="5" type="stmt"/>
         </file>
         <file name="store.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/store.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="6" count="3" type="stmt"/>
+          <line num="6" count="5" type="stmt"/>
         </file>
       </package>
       <package name="store.fighters">
-        <metrics statements="19" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="10" coveredmethods="3"/>
+        <metrics statements="20" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="9"/>
         <file name="fighter.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/fighters/fighter.actionType.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="3" type="stmt"/>
-          <line num="2" count="3" type="stmt"/>
+          <line num="1" count="6" type="stmt"/>
+          <line num="2" count="6" type="stmt"/>
         </file>
         <file name="fighter.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/fighters/fighter.actions.js">
-          <metrics statements="11" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="2"/>
-          <line num="4" count="2" type="stmt"/>
+          <metrics statements="12" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="8"/>
+          <line num="4" count="3" type="stmt"/>
           <line num="5" count="1" type="stmt"/>
           <line num="6" count="1" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="17" count="2" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="23" count="2" type="stmt"/>
-          <line num="28" count="2" type="stmt"/>
+          <line num="8" count="759" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="18" count="3" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
+          <line num="29" count="3" type="stmt"/>
         </file>
         <file name="fighter.reducer.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/fighters/fighter.reducer.js">
-          <metrics statements="6" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-          <line num="3" count="3" type="stmt"/>
-          <line num="10" count="3" type="cond" truecount="1" falsecount="0"/>
-          <line num="11" count="9" type="cond" truecount="1" falsecount="2"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
-          <line num="23" count="9" type="stmt"/>
+          <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="10" count="5" type="cond" truecount="1" falsecount="0"/>
+          <line num="11" count="18" type="cond" truecount="3" falsecount="0"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="23" count="16" type="stmt"/>
         </file>
       </package>
       <package name="store.octagirls">
-        <metrics statements="13" coveredstatements="9" conditionals="3" coveredconditionals="2" methods="6" coveredmethods="3"/>
+        <metrics statements="13" coveredstatements="13" conditionals="3" coveredconditionals="3" methods="6" coveredmethods="5"/>
         <file name="octagirls.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/octagirls/octagirls.actionType.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="3" type="stmt"/>
+          <line num="1" count="6" type="stmt"/>
         </file>
         <file name="octagirls.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/octagirls/octagirls.actions.js">
-          <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
-          <line num="4" count="1" type="stmt"/>
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+          <line num="4" count="2" type="stmt"/>
           <line num="5" count="1" type="stmt"/>
           <line num="6" count="1" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
         </file>
-        <file name="octagrirls.reducer.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/octagirls/octagrirls.reducer.js">
-          <metrics statements="5" coveredstatements="4" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
-          <line num="3" count="3" type="stmt"/>
-          <line num="7" count="3" type="cond" truecount="1" falsecount="0"/>
-          <line num="8" count="9" type="cond" truecount="1" falsecount="1"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="15" count="9" type="stmt"/>
+        <file name="octagirls.reducer.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week2/react-native-challenge/clone/store/octagirls/octagirls.reducer.js">
+          <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="7" count="5" type="cond" truecount="1" falsecount="0"/>
+          <line num="8" count="18" type="cond" truecount="2" falsecount="0"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="16" count="17" type="stmt"/>
         </file>
       </package>
     </metrics>

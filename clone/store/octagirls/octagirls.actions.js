@@ -3,13 +3,14 @@ import axios from 'axios'
 
 export const getOctagirls = () => {
   return dispatch => {
-    axios.get('http://ufc-data-api.ufc.com/api/v3/iphone/octagon_girls')
+    return axios.get('http://ufc-data-api.ufc.com/api/v3/iphone/octagon_girls')
       .then(resp => {
-        console.log(resp)
+        // console.log(resp)
         dispatch(getOctagirlsSuccess(resp.data))
+        return resp
       })
       .catch(err => {
-        console.log(err)
+        // console.log(err)
       })
   }
 }

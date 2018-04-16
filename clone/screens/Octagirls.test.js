@@ -25,12 +25,12 @@ beforeEach(() => {
   wrapper = shallow(<Provider store={store}><OctaGirls/></Provider>)
 })
 
-describe('Snapshot test <OctaGirls/>',()=>{
-  it('capturing Snapshot of OctaGirls', () => {
-      const renderedValue =  renderer.create(<Provider store={store}><OctaGirls/></Provider>).toJSON()
-      expect(renderedValue).toMatchSnapshot();
-  })
-})
+// describe('Snapshot test <OctaGirls/>',()=>{
+//   it('capturing Snapshot of OctaGirls', () => {
+//       const renderedValue =  renderer.create(<Provider store={store}><OctaGirls/></Provider>).toJSON()
+//       expect(renderedValue).toMatchSnapshot();
+//   })
+// })
 
 describe('<OctaGirls/>', () => {
   it('should render <OctaGirls/>', () => {
@@ -46,4 +46,12 @@ describe('<OctaGirls/>', () => {
   it('should have props', () => {
     expect(wrapper.props('octagirls')).toEqual({})
   })
+  // it('keyextractor', () => {
+    expect(wrapper.dive().instance()).toEqual('y')
+    // console.log(wrapper.instance().keyExtractor({id: '113'}, '4'))
+    // let key = wrapper.instance().keyExtractor({id: '113'}, '4')
+    // expect(key).toEqual('octa-113')
+    // expect(OctaGirls.keyExt)
+  // })
 })
+

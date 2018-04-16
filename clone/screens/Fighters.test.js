@@ -28,12 +28,12 @@ beforeEach(() => {
   wrapper = shallow(<Provider store={store}><Fighters/></Provider>)
 })
 
-describe('Snapshot test <Fighters/>',()=>{
-  it('capturing Snapshot of Fighters', () => {
-      const renderedValue =  renderer.create(<Provider store={store}><Fighters/></Provider>).toJSON()
-      expect(renderedValue).toMatchSnapshot();
-  })
-})
+// describe('Snapshot test <Fighters/>',()=>{
+//   it('capturing Snapshot of Fighters', () => {
+//       const renderedValue =  renderer.create(<Provider store={store}><Fighters/></Provider>).toJSON()
+//       expect(renderedValue).toMatchSnapshot();
+//   })
+// })
 
 describe('<Fighters/>', () => {
   it('should render <Fighters/>', () => {
@@ -47,14 +47,3 @@ describe('<Fighters/>', () => {
     expect(wrapper.find('FighterCard')).toBeDefined()
   })
 })
-
-// it('+++ check action on dispatching ', () => {
-//   let action
-//   // store.dispatch(searchFighters('hello'))
-//   action = mstore.getActions()
-//   console.log(action)
-//   // expect(wrapper.find(Fighters).prop('query')).toBe('hello')
-//   const q = searchFighters('hello')
-//   expect(q).toEqual({type:"FIGHTERS_QUERY", query: 'hello'})
-//   // expect(action.type).toBe("FIGHTERS_QUERY")
-// });

@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">42.86% </span>
+        <span class="strong">93.33% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>6/14</span>
+        <span class='fraction'>14/15</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">22.22% </span>
+        <span class="strong">88.89% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/9</span>
+        <span class='fraction'>8/9</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">54.55% </span>
+        <span class="strong">91.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/11</span>
+        <span class='fraction'>11/12</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -76,15 +76,17 @@
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">759x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -92,18 +94,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FIGHTERS_SUCCESS, FIGHTERS_QUERY } from './fighter.actionType'
@@ -111,10 +113,11 @@ import axios from 'axios'
 &nbsp;
 export const getFighters = (payload) =&gt; {
   return dispatch =&gt; {
-    axios.get('http://ufc-data-api.ufc.com/api/v3/iphone/fighters')
-      .then(<span class="fstat-no" title="function not covered" >re</span>sp =&gt; {
-        let fighters = <span class="cstat-no" title="statement not covered" >resp.data.filter(<span class="fstat-no" title="function not covered" >fi</span>ghter =&gt; <span class="cstat-no" title="statement not covered" >fighter.wins &gt; 16)      </span></span>
-<span class="cstat-no" title="statement not covered" >        dispatch(getFightersSuccess(fighters))</span>
+    return axios.get('http://ufc-data-api.ufc.com/api/v3/iphone/fighters')
+      .then(resp =&gt; {
+        let fighters = resp.data.filter(fighter =&gt; fighter.wins &gt; 16)      
+        dispatch(getFightersSuccess(fighters))
+        return fighters
       })
       .catch(<span class="fstat-no" title="function not covered" >er</span>r =&gt; {
 <span class="cstat-no" title="statement not covered" >        console.log(err)</span>
@@ -122,18 +125,18 @@ export const getFighters = (payload) =&gt; {
   }
 }
 &nbsp;
-export const searchFighters = <span class="fstat-no" title="function not covered" >(p</span>ayload) =&gt; {
-<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >di</span>spatch =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >   dispatch(fighterQuerySuccess(payload)) </span>
+export const searchFighters = (payload) =&gt; {
+  return dispatch =&gt; {
+   dispatch(fighterQuerySuccess(payload)) 
   }
 }
 &nbsp;
-const getFightersSuccess = <span class="fstat-no" title="function not covered" >(p</span>ayload) =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+const getFightersSuccess = (payload) =&gt; ({
   type: FIGHTERS_SUCCESS,
   fighters: payload
 })
 &nbsp;
-const fighterQuerySuccess = <span class="fstat-no" title="function not covered" >(p</span>ayload) =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+const fighterQuerySuccess = (payload) =&gt; ({
   type: FIGHTERS_QUERY,
   query: payload
 })</pre></td></tr>
@@ -142,7 +145,7 @@ const fighterQuerySuccess = <span class="fstat-no" title="function not covered" 
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 16 2018 02:13:55 GMT+0700 (WIB)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 16 2018 13:23:32 GMT+0700 (WIB)
 </div>
 </div>
 <script src="../../prettify.js"></script>

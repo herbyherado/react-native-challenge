@@ -3,10 +3,11 @@ import axios from 'axios'
 
 export const getFighters = (payload) => {
   return dispatch => {
-    axios.get('http://ufc-data-api.ufc.com/api/v3/iphone/fighters')
+    return axios.get('http://ufc-data-api.ufc.com/api/v3/iphone/fighters')
       .then(resp => {
         let fighters = resp.data.filter(fighter => fighter.wins > 16)      
         dispatch(getFightersSuccess(fighters))
+        return fighters
       })
       .catch(err => {
         console.log(err)

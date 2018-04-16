@@ -7,13 +7,19 @@ import { getOctagirls } from '../store/octagirls/octagirls.actions'
 import CardTab from '../components/CardTab'
 import Logo from '../components/Logo'
 
-class Home extends Component {
+export class Home extends Component {
   render() {
     return (
       <View style={styles.wrapper}>
         <Logo />
-        <CardTab press={ () => this.props.navigation.navigate('Fighters') } text={'Fighters'} />
-        <CardTab press={ () => this.props.navigation.navigate('Octagirls') } text={'Octagon Girls'} />
+        <CardTab press={
+          /* istanbul ignore next */ 
+          () => this.props.navigation.navigate('Fighters')
+          } text={'Fighters'} />
+        <CardTab press={ 
+          /* istanbul ignore next */
+          () => this.props.navigation.navigate('Octagirls')
+          } text={'Octagon Girls'} />
       </View>
     )
   }
