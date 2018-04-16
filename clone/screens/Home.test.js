@@ -26,12 +26,12 @@ beforeEach(() => {
   wrapper = shallow(<Provider store={store}><Home/></Provider>)
 })
 
-// describe('Snapshot test <Home/>',()=>{
-//   it('capturing Snapshot of Home', () => {
-//       const renderedValue =  renderer.create(<Provider store={store}><Home/></Provider>).toJSON()
-//       expect(renderedValue).toMatchSnapshot();
-//   })
-// })
+describe('Snapshot test <Home/>',()=>{
+  it('capturing Snapshot of Home', () => {
+      const renderedValue =  renderer.create(<Provider store={store}><Home/></Provider>).toJSON()
+      expect(renderedValue).toMatchSnapshot();
+  })
+})
 
 describe('<Home/>', () => {
   it('should render <Home/>', () => {
